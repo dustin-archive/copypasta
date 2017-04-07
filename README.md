@@ -1,0 +1,2 @@
+# copypasta
+a smol generator
