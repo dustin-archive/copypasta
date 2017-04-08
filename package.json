@@ -6,6 +6,9 @@
   "repository": "https://github.com/whaaaley/copypasta.git",
   "author": "Dustin Dowell <dustindowell22@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "pasta": "index.js"
+  },
   "dependencies": {
     "cli-prompter": "ahdinosaur/cli-prompter#pull-2",
     "fs-template": "^1.0.1",

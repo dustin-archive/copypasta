@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const prompter = require('cli-prompter')
 const template = require('fs-template')
 
