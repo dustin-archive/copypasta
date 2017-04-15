@@ -255,7 +255,7 @@ chalk@^1.1.0, chalk@^1.1.1, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-cli-autocomplete@^0.4.0:
+cli-autocomplete@latest:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/cli-autocomplete/-/cli-autocomplete-0.4.0.tgz#c08807fbe3b3088b3a3242d2cd6f74517fa3ad1b"
   dependencies:
@@ -267,17 +267,11 @@ cli-autocomplete@^0.4.0:
     so "^1.0.1"
     strip-ansi "^3.0.1"
 
-cli-prompter@ahdinosaur/cli-prompter#pull-2:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ahdinosaur/cli-prompter/tar.gz/3b745c2767a2d3a10cb8d4d8e2552a4edab35c0d"
+cli-prompt@latest:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/cli-prompt/-/cli-prompt-0.6.0.tgz#366699dea9c818be6e0e834c33b02d14d8c3696f"
   dependencies:
-    cli-autocomplete "^0.4.0"
-    lagden-promisify "^3.0.0"
-    pull-stream "^3.5.0"
-    pull-stream-model "^0.6.1"
-    run-waterfall "^1.1.3"
-    text-prompt "^0.1.1"
-    typeof-is "^1.0.1"
+    keypress "~0.2.1"
 
 cli-styles@^0.4:
   version "0.4.0"
@@ -518,13 +512,17 @@ json5@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
-lagden-promisify@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/lagden-promisify/-/lagden-promisify-3.0.0.tgz#e2db8b79c69caaf6ce5b213c73552524b5303155"
+keypress@~0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/keypress/-/keypress-0.2.1.tgz#1e80454250018dbad4c3fe94497d6e67b6269c77"
 
 lodash@^4.2.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
+looper@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/looper/-/looper-4.0.0.tgz#7706aded59a99edca06e6b54bb86c8ec19c95155"
 
 looper@~3.0.0:
   version "3.0.0"
@@ -626,10 +624,6 @@ prompt-skeleton@^0.3:
     ansi-escapes "^1.3"
     pass-stream "^0.1.5"
 
-pull-cat@^1.1.11:
-  version "1.1.11"
-  resolved "https://registry.yarnpkg.com/pull-cat/-/pull-cat-1.1.11.tgz#b642dd1255da376a706b6db4fa962f5fdb74c31b"
-
 pull-file@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/pull-file/-/pull-file-0.5.0.tgz#b3ca405306e082f9d4528288933badb2b656365b"
@@ -642,13 +636,6 @@ pull-file@^1.0.0:
   dependencies:
     pull-utf8-decoder "^1.0.2"
 
-pull-flat-merge@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/pull-flat-merge/-/pull-flat-merge-1.2.0.tgz#ae10da9f9a621ee3a9ac4be1471e4826d7618ba5"
-  dependencies:
-    pull-many "^1.0.8"
-    pull-stream "^3.4.5"
-
 pull-fs@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/pull-fs/-/pull-fs-1.1.6.tgz#f184f6a7728bb4d95641376bead69f6f66df47cd"
@@ -658,21 +645,21 @@ pull-fs@^1.1.6:
     pull-traverse "^1.0.3"
     pull-write-file "^0.2.1"
 
-pull-many@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/pull-many/-/pull-many-1.0.8.tgz#3dadd9b6d156c545721bda8d0003dd8eaa06293e"
-  dependencies:
-    pull-stream "^3.4.5"
-
 pull-paramap@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/pull-paramap/-/pull-paramap-1.2.1.tgz#ec533c90bbb1fcbc4ac94a94bf029f0615172172"
-
-pull-scan@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/pull-scan/-/pull-scan-1.0.0.tgz#0c27e4ee08eeb249a9ba0bffe53cb22ebc1b00b2"
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/pull-paramap/-/pull-paramap-1.2.2.tgz#51a4193ce9c8d7215d95adad45e2bcdb8493b23a"
   dependencies:
-    pull-stream "^3.4.5"
+    looper "^4.0.0"
+
+pull-prompt@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/pull-prompt/-/pull-prompt-0.0.0.tgz#efb0e04eb64064ed5d3b2b9cf03574b07e4d8c28"
+  dependencies:
+    chalk "^1.1.3"
+    cli-autocomplete latest
+    cli-prompt latest
+    text-prompt "^0.1.2"
+    yn "^1.2.0"
 
 pull-split@^0.2.0:
   version "0.2.0"
@@ -680,17 +667,7 @@ pull-split@^0.2.0:
   dependencies:
     pull-through "~1.0.6"
 
-pull-stream-model@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/pull-stream-model/-/pull-stream-model-0.6.1.tgz#d78c9e4efee710a3f337d2fe47e982b2b4cd253e"
-  dependencies:
-    pull-cat "^1.1.11"
-    pull-flat-merge "^1.1.0"
-    pull-scan "^1.0.0"
-    pull-stream "^3.5.0"
-    xtend "^4.0.1"
-
-pull-stream@^3.3.0, pull-stream@^3.4.5, pull-stream@^3.5.0:
+pull-stream@^3.3.0, pull-stream@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/pull-stream/-/pull-stream-3.5.0.tgz#1ee5b6f76fd3b3a49a5afb6ded5c0320acb3cfc7"
 
@@ -713,8 +690,8 @@ pull-write-file@^0.2.1, pull-write-file@^0.2.4:
   resolved "https://registry.yarnpkg.com/pull-write-file/-/pull-write-file-0.2.4.tgz#437344aeb2189f65e678ed1af37f0f760a5453ef"
 
 readable-stream@^2.1.5:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.8.tgz#ad28b686f3554c73d39bc32347fa058356624705"
+  version "2.2.9"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.9.tgz#cf78ec6f4a6d1eb43d26488cac97f042e74b7fc8"
   dependencies:
     buffer-shims "~1.0.0"
     core-util-is "~1.0.0"
@@ -747,10 +724,6 @@ resumer@~0.0.0:
   resolved "https://registry.yarnpkg.com/resumer/-/resumer-0.0.0.tgz#f1e8f461e4064ba39e82af3cdc2a8c893d076759"
   dependencies:
     through "~2.3.4"
-
-run-waterfall@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/run-waterfall/-/run-waterfall-1.1.3.tgz#d96fc0f5361bcbdbd438529dc8a4b42fc6761123"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -819,7 +792,7 @@ tape@^4.6.3:
     string.prototype.trim "~1.1.2"
     through "~2.3.8"
 
-text-prompt@^0.1.1:
+text-prompt@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/text-prompt/-/text-prompt-0.1.2.tgz#2acb77dbd01a4dcf1258d35ccbe0fcbb28319640"
   dependencies:
@@ -848,10 +821,8 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
 typeof-is@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/typeof-is/-/typeof-is-1.0.1.tgz#d6d538c0674326521e75ee9c80916a48470ee477"
-  dependencies:
-    es2040 "^1.2.3"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/typeof-is/-/typeof-is-1.0.2.tgz#98e8ac4d4b51662045002d7db91b5ee4a5362485"
 
 util-deprecate@~1.0.1:
   version "1.0.2"
@@ -865,6 +836,10 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-xtend@^4.0.1, xtend@~4.0.1:
+xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
+
+yn@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/yn/-/yn-1.2.0.tgz#d237a4c533f279b2b89d3acac2db4b8c795e4a63"

@@ -1,7 +1,7 @@
 {
   "name": "copypasta",
   "version": "0.0.0",
-  "description": "a smol generator",
+  "description": "a smol project generator",
   "main": "index.js",
   "repository": "https://github.com/whaaaley/copypasta.git",
   "author": "Dustin Dowell <dustindowell22@gmail.com>",
@@ -10,8 +10,8 @@
     "pasta": "index.js"
   },
   "dependencies": {
-    "cli-prompter": "ahdinosaur/cli-prompter#pull-2",
     "fs-template": "^1.0.1",
+    "pull-prompt": "^0.0.0",
     "pull-stream": "^3.5.0"
   },
   "devDependencies": {
