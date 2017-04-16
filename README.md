@@ -5,11 +5,10 @@
 ## Installation
 
 ```
-$ npm i -g copypasta
+$ npm i -D copypasta
 ```
 
 ## Usage
 ```
-$ npm i -D template-package-name
-$ pasta template-package-name
+$ pasta template-name
 ```
