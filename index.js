@@ -9,7 +9,7 @@ const template = require('fs-template')
 
 const target = process.cwd()
 const folder = process.argv[2]
-const source = `${target}/node_modules/${folder}`
+const source = `${target}/pasta/${folder}`
 const pasta = require(`${source}/pasta.js`)
 
 let vars = {}
