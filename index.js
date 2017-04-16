@@ -20,15 +20,12 @@ pull(
   prompt(),
   drain(answer => {
     vars[pasta[i++].name] = answer
-  }, err => {
-    if (err) throw err
+  }, () => {
     template({
       source,
       target,
       vars,
       ignore: 'pasta.js'
-    }, (err) => {
-      if (err) throw err
     })
   })
 )
